@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">学生体测管理</string>
+    <string name="error_configuration">请先配置串口</string>
+    <string name="error_security">设备没有读写权限</string>
+    <string name="error_unknown">未知原因无法打开串口</string>
+    <string name="password_char_set">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <!-- xxxactivity.java -->
+    <string name="toast_success">成功</string>
+    <string name="toast_fail">失败</string>
+    <string name="toast_notconnect">请先连接打印机</string>
+    <string name="toast_usbpermit">请允许程序使用USB设备，并再次点击此按钮</string>
+    <string name="updateprogram">更新程序</string>
+    <string name="sendtouart">发往串口</string>
+    <string name="sendtext">发送文本</string>
+    <string name="menu_setdebug">开启调试</string>
+</resources>

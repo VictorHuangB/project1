@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_green_biground_bt"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/device_local"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="从本地存储（根目录/学生名单/)"
+        android:textColor="@android:color/white"
+        android:textSize="22dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_white_color" />
+
+    <TextView
+        android:id="@+id/device_U"
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="从外部存储U盘"
+        android:textColor="@android:color/white"
+        android:textSize="22dp" />
+</LinearLayout>

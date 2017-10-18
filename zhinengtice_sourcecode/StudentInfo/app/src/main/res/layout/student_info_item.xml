@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="吉克隽逸"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="00001"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="男"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/classes"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="班级"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="一班"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/idcard"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="身份证"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/race"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="民族"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/jiguan"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="籍贯"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="家庭住址"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="职务"
+        android:textColor="@color/screen_settings"
+        android:textSize="13dp"
+        android:visibility="gone" />
+</LinearLayout>

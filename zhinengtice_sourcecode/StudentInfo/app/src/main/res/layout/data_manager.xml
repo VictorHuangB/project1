@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/test_menu_bg">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginRight="30dp"
+                android:id="@+id/add"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/add_icon" />
+
+            <FrameLayout
+                android:id="@+id/search_group_container"
+                android:layout_width="100dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/add"
+                android:background="@drawable/search_bt">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/search" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/search_group_et_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="200dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/search_group_container"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/search_group_class_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/spinner_bg"
+                        android:paddingLeft="8dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/search_class_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="@dimen/spinner_right"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/search_grade_label_bg"
+                        android:gravity="center"
+                        android:text="选择年级"
+                        android:textColor="@color/app_pink_bg"
+                        android:textSize="24dp" />
+
+                    <FrameLayout
+                        android:layout_width="@dimen/spinner_right"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right">
+
+                        <ImageView
+                            android:layout_width="@dimen/arrow_down_size"
+                            android:layout_height="@dimen/arrow_down_size"
+                            android:layout_gravity="center"
+                            android:src="@drawable/down" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/search_group_container"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/search_group_grade_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/spinner_bg"
+                        android:paddingLeft="8dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/search_grade_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="@dimen/spinner_right"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/search_grade_label_bg"
+                        android:gravity="center"
+                        android:text="选择班级"
+                        android:textColor="@color/app_pink_bg"
+                        android:textSize="24dp" />
+
+                    <FrameLayout
+                        android:layout_width="@dimen/spinner_right"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right">
+
+                        <ImageView
+                            android:layout_width="@dimen/arrow_down_size"
+                            android:layout_height="@dimen/arrow_down_size"
+                            android:layout_gravity="center"
+                            android:src="@drawable/down" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/data_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/app_light_round_shape"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollingCache="false"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

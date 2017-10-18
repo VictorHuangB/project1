@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/menu_container1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--单项查询-->
+            <LinearLayout
+                android:id="@+id/menu_single"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:background="@drawable/menu_single"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/search2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="单项查询"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+
+            <!--成绩查询-->
+            <LinearLayout
+                android:id="@+id/menu_score"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/menu_score"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/score_paiming" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="成绩排名"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+            <!--水平分析-->
+            <LinearLayout
+                android:id="@+id/menu_level"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/menu_level"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/menu_level_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="水平分析"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_container2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--名单下载-->
+            <LinearLayout
+                android:id="@+id/menu_download"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:background="@drawable/menu_download"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/data_download" />
+
+                <TextView
+                    android:id="@+id/menu_download_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="名单下载"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+            <!--导出数据-->
+            <LinearLayout
+                android:id="@+id/menu_upload"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/menu_upload"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/data_upload" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="导出数据"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+            <!--系统设置-->
+            <LinearLayout
+                android:id="@+id/menu_settings"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/menu_level"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="系统设置"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_container3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--单人测试-->
+            <LinearLayout
+                android:id="@+id/menu_start_single"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:background="@drawable/menu_start"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="单人测试"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+            <!-- &lt;!&ndash;连接外设&ndash;&gt;
+             <LinearLayout
+                 android:id="@+id/menu_connect"
+                 android:layout_width="@dimen/launch_menu_size"
+                 android:layout_height="@dimen/launch_menu_size"
+                 android:background="@drawable/menu_single"
+                 android:gravity="center"
+                 android:orientation="vertical">
+
+                 <ImageView
+                     android:layout_width="@dimen/launch_menu_icon_size"
+                     android:layout_height="@dimen/launch_menu_icon_size"
+                     android:src="@drawable/connect_icon" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="3dp"
+                     android:text="连接外设"
+                     android:textColor="@android:color/white"
+                     android:textSize="@dimen/launch_text_size" />
+             </LinearLayout>-->
+            <!--多人测试-->
+            <LinearLayout
+                android:id="@+id/menu_start_group"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/menu_start"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/start" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="多人测试"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+
+            <!--数据管理-->
+            <LinearLayout
+                android:id="@+id/menu_datamanager"
+                android:layout_width="@dimen/launch_menu_size"
+                android:layout_height="@dimen/launch_menu_size"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/menu_download"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/launch_menu_icon_size"
+                    android:layout_height="@dimen/launch_menu_icon_size"
+                    android:src="@drawable/data_manage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="数据管理"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/launch_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/project_title"
+        android:layout_width="@dimen/project_title_width"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/half_round_bg"
+        android:textColor="#aaffffff"
+        android:textSize="25dp" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 系统对话框MSG -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_message"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:text="手机号填写错误"
+    android:textColor="@color/dialog_text_color"
+    android:textSize="16dp"></TextView>

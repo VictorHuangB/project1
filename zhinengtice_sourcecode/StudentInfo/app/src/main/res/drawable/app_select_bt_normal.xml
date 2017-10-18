@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--带圆角的边框1dp背景-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <stroke
+        android:width="1px"
+        android:color="@color/bubble_dark_background" />
+    <corners android:radius="8dp" />
+</shape>

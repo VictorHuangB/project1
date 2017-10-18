@@ -1,0 +1,507 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/test_menu_bg">
+
+            <ImageView
+                android:layout_width="@dimen/back_size"
+                android:layout_height="@dimen/back_size"
+                android:layout_gravity="center"
+                android:src="@drawable/back1" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/lianjie"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pink_bt_bg"
+            android:onClick="lianjie"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="连接成功"
+                android:textColor="@color/app_white_color"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aaa"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pink_bt_bg"
+            android:onClick="aaa"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="模拟成绩"
+                android:textColor="@color/app_white_color"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bbb"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pink_bt_bg"
+            android:onClick="bbb"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="模拟"
+                android:textColor="@color/app_white_color"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ccc"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pink_bt_bg"
+            android:onClick="ccc"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="模拟成绩"
+                android:textColor="@color/app_white_color"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:background="@drawable/test_menu_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="仰卧起坐测试仪"
+            android:textColor="@color/app_white_color"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8">
+
+                <LinearLayout
+                    android:id="@+id/result_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp">
+
+                            <EditText
+                                android:id="@+id/code_et"
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/test_code_et"
+                                android:gravity="center_vertical"
+                                android:hint="请输入完整学号"
+                                android:inputType="number"
+                                android:paddingLeft="12dp"
+                                android:textColor="@color/app_white_color"
+                                android:textColorHint="@color/app_white_color"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:id="@+id/code_delete"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/delete_selector" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/common_operation_height"
+                            android:layout_marginTop="16dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/result_ic"
+                                android:layout_width="@dimen/common_operation_width"
+                                android:layout_height="@dimen/common_operation_height"
+                                android:background="@drawable/test_code_darken_et"
+                                android:gravity="center"
+                                android:text="读卡"
+                                android:textColor="@color/app_white_color"
+                                android:textSize="@dimen/common_small_size" />
+
+                            <TextView
+                                android:id="@+id/result_ok"
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/test_code_darken_et"
+                                android:gravity="center"
+                                android:text="确定"
+                                android:textColor="@color/app_white_color"
+                                android:textSize="@dimen/common_small_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/result_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/test_avatar"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/head" />
+
+                    <ImageView
+                        android:id="@+id/test_delete"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/delete3" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginRight="12dp"
+                        android:gravity="right"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/result_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/test_delete"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="20dp"
+                            android:text="周大国"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="@dimen/test_result_size" />
+
+                        <TextView
+                            android:id="@+id/result_sex"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/test_delete"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="男"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="@dimen/test_result_size" />
+
+                        <TextView
+                            android:id="@+id/result_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="一年级二班"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/result_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="000000555"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="24dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </FrameLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@color/screen_settings" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+
+                <LinearLayout
+                    android:id="@+id/start_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/start_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/common_operation_height"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="开始测试:"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="@dimen/common_big_size" />
+
+                        <FrameLayout
+                            android:id="@+id/menu_start"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/test_height"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/pink_bt_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/menu_start_icon"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/start" />
+
+                            <TextView
+                                android:id="@+id/menu_start_label"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/start"
+                                android:text="等待接收成绩..."
+                                android:textColor="@color/app_white_color"
+                                android:textSize="24dp"
+                                android:visibility="gone" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/screen_settings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="8">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8">
+
+                <ImageView
+                    android:id="@+id/animate_view"
+                    android:layout_width="@dimen/gif_size"
+                    android:layout_height="@dimen/gif_size"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18dp"
+                    android:layout_toRightOf="@id/animate_view"
+                    android:text="倒计时:"
+                    android:textColor="@color/app_white_color"
+                    android:textSize="@dimen/common_big_size" />
+
+                <TextView
+                    android:id="@+id/time_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/animate_view"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="30"
+                    android:textColor="@color/app_white_color"
+                    android:textSize="50dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toRightOf="@id/animate_view">
+
+                    <TextView
+                        android:id="@+id/time_modify"
+                        android:layout_width="@dimen/common_operation_width"
+                        android:layout_height="@dimen/common_operation_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/test_code_darken_et"
+                        android:gravity="center"
+                        android:text="修改"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="@dimen/common_small_size" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:background="@color/screen_settings" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/test_score_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="测试成绩: "
+                        android:textColor="@color/app_white_color"
+                        android:textSize="@dimen/common_big_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/score_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:gravity="right"
+                            android:text="0"
+                            android:textColor="@color/app_pink_bg"
+                            android:textSize="50dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="right"
+                            android:text="个"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="@dimen/common_big_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/result_operation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/result_test_cancel"
+                            android:layout_width="@dimen/common_operation_width"
+                            android:layout_height="@dimen/common_operation_height"
+                            android:background="@drawable/test_code_darken_et"
+                            android:gravity="center"
+                            android:text="重测"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="@dimen/common_small_size" />
+
+                        <TextView
+                            android:id="@+id/result_best_save"
+                            android:layout_width="@dimen/common_operation_width"
+                            android:layout_height="@dimen/common_operation_height"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/test_code_darken_et"
+                            android:gravity="center"
+                            android:text="保存成绩"
+                            android:textColor="@color/app_white_color"
+                            android:textSize="@dimen/common_small_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

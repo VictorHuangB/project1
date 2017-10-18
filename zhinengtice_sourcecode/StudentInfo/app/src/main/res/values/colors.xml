@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bubble_dark_background">#20000000</color>
+    <color name="screen_settings">#4d4d4d</color>
+    <color name="screen_settings_sub">#8c8c8c</color>
+    <color name="excel_attribute_color">#077eff</color>
+    <color name="window_divider_color">#33d0d0d0</color>
+    <!--反馈色-->
+    <color name="app_common_select_color">#55ffffff</color>
+    <!--数据管理-->
+    <color name="app_darken_bg">#0e4eef</color>
+    <color name="app_pink_bg">#e94e92</color>
+    <color name="app_pink_press_bg">#FF9B295B</color>
+    <color name="start_upload">#FF66CDA5</color>
+    <color name="start_upload_press">#327b5f</color>
+    <color name="app_white_color">#ffffff</color>
+    <color name="menu_start_bg">#ff2437</color>
+    <color name="menu_start_press">#ff4548</color>
+    <!-- 对话框 -->
+    <color name="dialog_text_color">#8a8a8a</color>
+    <color name="dialog_press_color">#FFF5F4F4</color>
+    <color name="avater_dialog_text_color">#077eff</color>
+    <color name="boy_text_color">#0b5c1d</color>
+    <color name="girl_bg_color">@color/app_pink_bg</color>
+    <color name="indicateColor">#FF6C6B6B</color>
+    <color name="shadow_color">#66000000</color>
+</resources>

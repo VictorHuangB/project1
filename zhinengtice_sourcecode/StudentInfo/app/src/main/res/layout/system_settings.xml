@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout" />
+
+    <com.android.student.data.test.HomeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sys_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/seekbar_icon_bg_size"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:background="@drawable/circle">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bobao_volume" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="语音播报"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/voice_bobao_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sys_operate_marin_left"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/agree_or_no"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/seekbar_icon_bg_size"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:background="@drawable/circle">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="语音提示"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="28dp" />
+
+                    <CheckBox
+                        android:id="@+id/voice_tip_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sys_operate_marin_left"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/agree_or_no"
+                        android:checked="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/seekbar_icon_bg_size"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:background="@drawable/circle">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/yinliang" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="音量调节"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="28dp" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/sys_bright_low"
+                        android:layout_height="@dimen/sys_bright_low"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/sys_operate_marin_left"
+                        android:src="@drawable/volume_low" />
+
+                    <SeekBar
+                        android:id="@+id/volume_seek"
+                        style="@style/player_progressBarStyleHorizontal"
+                        android:layout_width="@dimen/seekbar_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:max="100"
+                        tools:progress="50" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sys_bright_high"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/volume_high" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/seekbar_icon_bg_size"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:background="@drawable/circle">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/brightness" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="亮度调节"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="28dp" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/sys_bright_low"
+                        android:layout_height="@dimen/sys_bright_low"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/sys_operate_marin_left"
+                        android:src="@drawable/brightness_low" />
+
+                    <SeekBar
+                        android:id="@+id/bright_seek"
+                        style="@style/player_progressBarStyleHorizontal"
+                        android:layout_width="@dimen/seekbar_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:max="100"
+                        tools:progress="50" />
+
+                    <ImageView
+                        android:layout_width="@dimen/sys_bright_high"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/brightness_high" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="@dimen/seekbar_icon_bg_size"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:background="@drawable/circle">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/pin" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="管理员密码"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="28dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_admin_et"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/sys_operate_marin_left"
+                        android:background="@drawable/complex_et"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="6"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:id="@+id/ic_admin_save"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/app_green_bt"
+                        android:gravity="center"
+                        android:text="保存密码"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="24dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/seekbar_icon_bg_size"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center"
+                        android:src="@drawable/settings" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:shadowColor="@color/shadow_color"
+                        android:shadowDx="2"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="IC卡密码"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="28dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_et_1"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/sys_operate_marin_left"
+                        android:background="@drawable/text_activated"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/start_upload"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_et_2"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/text_activated"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/start_upload"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_et_3"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/text_activated"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/start_upload"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_et_4"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/text_activated"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/start_upload"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_et_5"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/text_activated"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/start_upload"
+                        android:textSize="40dp" />
+
+                    <EditText
+                        android:id="@+id/ic_settings_et_6"
+                        android:layout_width="40dp"
+                        android:layout_height="@dimen/sys_bright_high"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/text_activated"
+                        android:digits="@string/password_char_set"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:src="@drawable/volume_high"
+                        android:textColor="@color/start_upload"
+                        android:textSize="24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/start_upload"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:id="@+id/ic_pin_save"
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/seekbar_icon_bg_size"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/app_green_bt"
+                        android:gravity="center"
+                        android:text="保存密码"
+                        android:textColor="@color/app_white_color"
+                        android:textSize="24dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.student.data.test.HomeScrollView>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- 系统对话框 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:minHeight="340dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/biaoding_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="请输入第一次标定值"
+            android:textColor="@color/app_pink_bg"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_et"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/app_select_bt_select"
+                android:maxLength="20"
+                android:paddingLeft="12dp"
+                android:textColor="@color/app_pink_bg"
+                android:textColorHint="@color/app_pink_bg"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/input_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="bottom"
+                android:text="cm"
+                android:textColor="@color/app_pink_bg"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/dialog_text_color" />
+
+        <LinearLayout
+            android:id="@+id/layout_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/dialog_bottom_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_operation_left"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_bottom_left_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/dialog_text_color" />
+
+            <TextView
+                android:id="@+id/dialog_operation_right"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_bottom_right_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/dialog_text_color"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

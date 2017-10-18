@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_layout" />
+
+
+    <LinearLayout
+        android:id="@+id/search_group_et_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/search_group_container"
+            android:layout_weight="1">
+
+            <Spinner
+                android:id="@+id/search_group_class_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_bg"
+                android:paddingLeft="8dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/search_class_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="@dimen/spinner_right"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/search_grade_label_bg"
+                android:gravity="center"
+                android:text="选择年级"
+                android:textColor="@color/app_pink_bg"
+                android:textSize="24dp" />
+
+            <FrameLayout
+                android:layout_width="@dimen/spinner_right"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="@dimen/arrow_down_size"
+                    android:layout_height="@dimen/arrow_down_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/down" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/search_group_container"
+            android:layout_weight="1">
+
+            <Spinner
+                android:id="@+id/search_group_grade_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_bg"
+                android:paddingLeft="8dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/search_grade_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="@dimen/spinner_right"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/search_grade_label_bg"
+                android:gravity="center"
+                android:text="选择班级"
+                android:textColor="@color/app_pink_bg"
+                android:textSize="24dp" />
+
+            <FrameLayout
+                android:layout_width="@dimen/spinner_right"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:layout_width="@dimen/arrow_down_size"
+                    android:layout_height="@dimen/arrow_down_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/down" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/export_confirm"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="导出到本地"
+        android:textSize="24dp"
+        android:textColor="@color/app_white_color"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/app_green_bt"
+        android:layout_width="372dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/export_U"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="导出到U盘"
+        android:textSize="24dp"
+        android:textColor="@color/app_white_color"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/app_green_bt"
+        android:layout_width="372dp"
+        android:layout_height="60dp" />
+    </LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/show_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Ecxel 读取Demo" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:text="共0条信息" />
+
+    <FrameLayout
+        android:id="@+id/search_area"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/show_data"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="查询"
+                android:textColor="#cc077eff" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/search">
+
+                <EditText
+                    android:id="@+id/search_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/app_select_bt_select"
+                    android:hint="输入姓名/学号"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/screen_settings"
+                    android:textColorHint="@color/screen_settings_sub"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/search_clear"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="12dp"
+                    android:layout_toLeftOf="@id/search"
+                    android:src="@drawable/delete_selector" />
+            </FrameLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+    <!--  <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <com.dianjineng.android.lib.pulllayout.PullLayout
+              android:id="@+id/pull_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              app:dist="50dp"
+              app:itemLoadMore="@layout/load_more"
+              app:itemRefresh="@layout/refresh_head">
+
+              <android.support.v7.widget.RecyclerView
+                  android:id="@+id/data_list"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+
+          </com.dianjineng.android.lib.pulllayout.PullLayout>
+      </FrameLayout>-->
+    <FrameLayout
+        android:id="@+id/data_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_area"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/app_light_round_shape"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+
+        <ListView
+            android:id="@+id/data_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scrollingCache="false" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/search_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_area"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/app_dark_round_shape"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/search_result_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:text="关闭"
+            android:textColor="#88077eff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/search_result_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="查询到"
+            android:textColor="#077eff"
+            android:textSize="13dp" />
+
+        <ListView
+            android:layout_marginTop="3dp"
+            android:id="@+id/search_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scrollingCache="false" />
+    </LinearLayout>
+</RelativeLayout>
